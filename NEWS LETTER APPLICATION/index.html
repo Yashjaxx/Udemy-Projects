@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Letter Application</title>
+    <link rel="stylesheet" href="style.css">
+     <!--Font Awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+    <a class="button" onclick="toggleNewsLetter()">Subscribe Us</a>
+    <div class="hidden" id="newsLetter">
+        <h2>Join Our Exclusive News Letter</h2>
+        <p>Follow my other courses as well.</p>
+
+        <a class="close" onclick="toggleNewsLetter()">
+        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </a>
+
+        <div class="box">
+            <input id="push" type="email" placeholder="Enter your Email" >
+        </div>
+
+        <div class="box">
+           <form action="thankyou.html" method="GET" onsubmit="return validateForm()">
+                <button type="submit">Sign Up</button>
+           </form>
+        </div>
+    </div>
+    
+     
+    <script src="script.js"></script>
+</body>
+</html>

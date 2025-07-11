@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Changer Application</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Change the CSS of below Image! With the help of the Sliders.</h1>
+        <span class="heading">Javascript</span>
+
+        <div class="css-controller">
+            <label for="base">Base Color</label>
+            <input type="color" name="base" id="base" value="#ff0000">
+
+            <label for="width">Width</label>
+            <input type="range" id="width" name="width" min="0" max="100" value="50">
+
+            <label for="Border-Radius">Border-Radius</label>
+            <input type="range" id="border-radius" name="border-radius" min="0" max="100" value="5" data-sizing="px">
+
+            <label for="Padding">Padding</label>
+            <input type="range" id="Padding" name="Padding" min="0" max="100" value="0" data-sizing="px">
+
+            <label for="Blurg">Blur</label>
+            <input type="range" id="Blur" name="Blur" min="0" max="20" value="0" data-sizing="px">
+        </div>
+
+        <image src="https://cdn.pixabay.com/photo/2025/01/10/17/24/birds-9324370_1280.jpg" alt="Image of birds"></image>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
